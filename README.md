@@ -1,7 +1,3 @@
-# takuzoo3868.github.io
-> My portfolio developed by me using Vue.js and Vuetify.
-
-https://takuzoo3868.github.io
 
 ## Project setup
 ```
