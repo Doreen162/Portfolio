@@ -1,0 +1,32 @@
+language: node_js
+node_js:
+  - lts/*
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - dev
+
+install:
+  - npm install
+  - npm run build
+
+script:
+  - echo "Skipping tests"
+
+deploy:
+  provider: pages:git
+  token:
+    secure: CU1kjTq6PwYsLvtOfYggK5zObyfu/FMHSt14y3izG8ASKmCVAdN3hNIl4mCKLYWuswkU8DZIdHH6M9fbRzrQuK7DrUnJ2V8t3X+uNAfGb4V2x6DB+3f7pNI9ZcJKRYTXtMb9aBUGjweUXYkBlYrdZ9WmDPgn5twWIP0Bt17MB8UHPboa8FceRv7Q1IpHtR5qWTHOcZyvau21AnQNGTCY5XdxfpCVByYJtePNnc8/uEF0CKde4XYQud5CIwCkxr082OpTt1Afozs5RzV83qJrW815L34hX0YzCVY9fErKqOQzNbVHcS2hTn3Cq6KFx8xrVES7g/nI6YFIarZxrEPqPuIJ6VbF/X9b2gxYRo/iaOdNp1kJkDuf3dkimvOr+fk1J990W+WvBhsk0UM09wem2BTzlt6r8JcodOYLETsa+f6tlVVQ4J1HbksTUbmSqySfPQZJaNJ/eDCxNOo1Q+7UI9NIrjtcFbldVQMs4mItMXPnS3aoxOmzFbMEIJ8yxlFpVnfvkpvktwuYZHuQ0OVgYRcAV+std8xnzbFfQy2OQMAN7D6C9lUf0s1kp26lIP6cXZzjZj+04dPhzSBmn9lux296rqJAV0+Uow17gz0CgLrnNw66D/+lRK3mD+ejPk3JDxvby9rBHQHTJbdKn1e6IDC2hVAxpLCxXEjsSOqt6k8=
+  edge: true
+  keep_history: false
+  target_branch: master
+  local_dir: dist
+  name: Travis-CI
+  email: travis-ci@example.com
+  commit_message: Publishing site on `date "+%Y-%m-%d %H:%M:%S"`
+  on:
+    branch: dev

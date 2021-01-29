@@ -1,0 +1,106 @@
+{
+  "name": "portfolio",
+  "version": "1.1.0",
+  "description": "My vuetify portfolio",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "deploy": "gh-pages -d dist",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
+    "vue-meta": "^2.3.3",
+    "vuetify": "^2.2.18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@gfx/zopfli": "^1.0.14",
+    "@mdi/font": "^5.0.45",
+    "@vue/cli-plugin-babel": "^4.2.3",
+    "@vue/cli-plugin-eslint": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "brotli-webpack-plugin": "^1.1.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "css-loader": "^3.4.2",
+    "deepmerge": "^4.2.2",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "typed.js": "^2.0.11",
+    "typeface-roboto": "0.0.75",
+    "vue-cli-plugin-vuetify": "^2.0.5",
+    "vue-router": "^3.1.6",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.4.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/strongly-recommended"
+    ],
+    "rules": {
+      "indent": [
+        2,
+        2
+      ],
+      "vue/html-indent": [
+        "error",
+        4
+      ],
+      "no-extra-parens": 1,
+      "no-multiple-empty-lines": [
+        2,
+        {
+          "max": 1
+        }
+      ],
+      "no-multi-spaces": 2,
+      "quotes": [
+        2,
+        "double"
+      ],
+      "comma-style": [
+        2,
+        "last"
+      ],
+      "vue/html-closing-bracket-newline": [
+        2,
+        {
+          "multiline": "never"
+        }
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
